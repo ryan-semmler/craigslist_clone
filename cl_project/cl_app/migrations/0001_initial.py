@@ -3,13 +3,19 @@
 from __future__ import unicode_literals
 from django.contrib.auth.models import User
 from django.db import migrations, models
+from ..models import Posting
 
 
 class Migration(migrations.Migration):
 
-    def load_user(apps, schema_editor):
-        u = User.objects.create_user('ryansemmler', "semmra7@gmail.com", "PASSWORD")
-        u.save()
+    # def load_user(apps, schema_editor):
+    #     u = User.objects.create_user('ryansemmler', "semmra7@gmail.com", "PASSWORD")
+    #     u.save()
+
+    # def load_listing(apps, schema_editor):
+    #     l = Posting(title="Chicken Pizza", description="It's a goddamn chicken pizza", image="https://www.landolakes.com/RecipeManagementSystem/media/Recipe-Media-Files/Recipes/Retail/DesktopImages/15684.jpg?ext=.jpg")
+    #     l.city = "Raleigh"
+    #     l.user =
 
     initial = True
 
@@ -17,7 +23,7 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.RunPython(load_user),
+        # migrations.RunPython(load_user),
         migrations.CreateModel(
             name='Category',
             fields=[

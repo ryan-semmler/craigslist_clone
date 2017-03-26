@@ -8,4 +8,5 @@ urlpatterns = [
     url(r'^city$', views.city, name='city'),
     url(r'^categories$', views.categories, name='categories'),
     url(r'^listing_(?P<listing_id>[0-9]+)$', views.listing_detail, name='listing_detail'),
+    url(r'^user_listings_(?P<user_id>[0-9]+)$', views.user_listings, name='user_listings'),
 ]

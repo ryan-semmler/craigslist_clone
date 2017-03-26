@@ -1,0 +1,7 @@
+<h2>Listings for {{u.username}}</h2>
+
+<ul>
+  {% for listing in listings %}
+    <li><a href="listing_{{listing.id}}">{{listing}}</a></li>
+  {% endfor %}
+</ul>

@@ -12,7 +12,7 @@ class Posting(models.Model):
     posted_date = models.DateTimeField()
 
     def __str__(self):
-        return self.title + str(self.posted_date)
+        return self.title
 
 
 class Category(models.Model):
